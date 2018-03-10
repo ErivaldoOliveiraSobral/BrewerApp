@@ -22,7 +22,7 @@
         android:layout_width="320dp"
         android:layout_height="39dp"
         android:fontFamily="cursive"
-        android:text="Bem Vindo ao Brewer App"
+        android:text="@string/mensagemInicio"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"

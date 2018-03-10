@@ -2,8 +2,10 @@ package br.com.erivaldo.brewer.brewerapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,5 +14,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mensagem_login_activity);
 
+        Button btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(onClickLogin());
+
+    }
+
+    private View.OnClickListener onClickLogin() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView txtViewUsuario = (TextView) findViewById(R.id.txtUsuario);
+                TextView txtViewSenha = (TextView) findViewById(R.id.txtSenha);
+
+                String txtUsuario = txtViewUsuario.getText().toString();
+                String txtSenha = txtViewSenha.getText().toString();
+
+                if (txtUsuario.equals("erivaldo") && txtSenha.equals("1234")){
+                    Toast.makeText(MainActivity.this, "Login Efetuado com Sucesso", Toast.LENGTH_LONG).show();
+                    setContentView(R.layout.index);
+                }
+            }
+        };
     }
 }
