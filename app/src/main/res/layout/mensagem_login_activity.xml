@@ -19,33 +19,33 @@
 
     <TextView
         android:id="@+id/mensagemInicio"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="39dp"
         android:fontFamily="cursive"
         android:text="Bem Vindo ao Brewer App"
+        android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.97" />
 
     <TextView
         android:id="@+id/txtVUsuario"
         android:layout_width="wrap_content"
-        android:layout_height="19dp"
+        android:layout_height="25dp"
         android:text="Usuário:"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31"
+        app:layout_constraintVertical_bias="0.00999999"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -58,15 +58,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56"
+        app:layout_constraintVertical_bias="0.13999999"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txtUsuario"
-        android:layout_width="266dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
@@ -75,12 +75,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintVertical_bias="0.050000012"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txtSenha"
-        android:layout_width="262dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
@@ -89,12 +89,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65999997"
+        app:layout_constraintVertical_bias="0.19999999"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="Entrar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,7 +102,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintVertical_bias="0.32999998"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
