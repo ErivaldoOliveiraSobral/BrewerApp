@@ -2,6 +2,7 @@
     <string name="app_name">BrewerApp</string>
     <string name="mensagem_login">Faça seu Login</string>
     <string name="mensagemInicio">Bem Vindo ao Brewer App!</string>
-    <string name="sucessoLogin">Login efetuado com sucesso</string>
+    <string name="sucessoLogin">Obrigado!</string>
     <string name="voltar">Voltar</string>
+    <string name="title_activity_teste">TesteActivity</string>
 </resources>

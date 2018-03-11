@@ -12,11 +12,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mensagem_login_activity);
+        setContentView(R.layout.activity_login);
 
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(onClickLogin());
-
     }
 
     private View.OnClickListener onClickLogin() {
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (txtUsuario.equals("erivaldo") && txtSenha.equals("1234")){
                     Toast.makeText(MainActivity.this, "Login Efetuado com Sucesso", Toast.LENGTH_LONG).show();
-                    setContentView(R.layout.index);
+                    setContentView(R.layout.activity_index);
                 }
             }
         };
