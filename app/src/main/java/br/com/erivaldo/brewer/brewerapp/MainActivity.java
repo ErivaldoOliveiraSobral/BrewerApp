@@ -28,13 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 String txtUsuario = txtViewUsuario.getText().toString();
                 String txtSenha = txtViewSenha.getText().toString();
 
-                if (txtUsuario.equals("erivaldo") && txtSenha.equals("123")){
+                if (txtUsuario.equals("admin") && txtSenha.equals("123")){
                     Toast.makeText(MainActivity.this, "Login Efetuado com Sucesso", Toast.LENGTH_LONG).show();
+                    //setContentView(R.layout.activity_index);
                     setContentView(R.layout.activity_index);
                 } else {
                     Toast.makeText(
                             MainActivity.this,
-                            "Usuário = erivaldo e Senha = 123",
+                            "Usuário = admin e Senha = 123",
                             Toast.LENGTH_LONG).show();
                 }
             }
