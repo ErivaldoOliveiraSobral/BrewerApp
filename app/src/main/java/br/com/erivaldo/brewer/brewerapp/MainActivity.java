@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends DebugActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

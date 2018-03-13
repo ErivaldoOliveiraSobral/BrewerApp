@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".IndexActivity" />
+        <activity android:name=".DebugActivity"></activity>
     </application>
 
 </manifest>
