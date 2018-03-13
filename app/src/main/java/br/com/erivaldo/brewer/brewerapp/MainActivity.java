@@ -1,5 +1,6 @@
 package br.com.erivaldo.brewer.brewerapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,12 @@ public class MainActivity extends DebugActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+           /*
+                Bundle params = new Bundle();
+                params.putString("nome", "Erivaldo");
+                params.putString("numero", "123");
+            */
+
                 TextView txtViewUsuario = (TextView) findViewById(R.id.txtUsuario);
                 TextView txtViewSenha = (TextView) findViewById(R.id.txtSenha);
 
@@ -31,7 +38,8 @@ public class MainActivity extends DebugActivity {
                 if (txtUsuario.equals("admin") && txtSenha.equals("123")){
                     Toast.makeText(MainActivity.this, "Login Efetuado com Sucesso", Toast.LENGTH_LONG).show();
                     //setContentView(R.layout.activity_index);
-                    setContentView(R.layout.activity_index);
+                    Intent it = new Intent(MainActivity.this,IndexActivity.class);
+                    startActivity(it);
                 } else {
                     Toast.makeText(
                             MainActivity.this,
