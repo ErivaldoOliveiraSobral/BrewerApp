@@ -1,6 +1,7 @@
 package br.com.erivaldo.brewer.brewerapp;
 
 import android.content.Intent;
+import android.os.Debug;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,16 +22,26 @@ public class IndexActivity extends DebugActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Define qual será a View da Activity
         setContentView(R.layout.activity_index);
-/*
-        Intent it = getIntent();
-        Bundle param = it.getExtras();
-        String texto = param.getString("nome");
-        int numero = param.getInt("numero");
-*/
-        Button btnVoltar = (Button) findViewById(R.id.btnVoltar);
-        btnVoltar.setOnClickListener(onclickVoltar());
+
+        // Recupera a intent e os dados enviados na chamda da Activity
+        Intent intent = getIntent();
+        Bundle params = intent.getExtras();
+
+        // verificar se existe parâmetros
+        if (params != null) {
+            String nome = params.getString("nome");
+
+            // Mostra o nome do usuário enviado no log e no Toast
+            Toast.makeText(IndexActivity.this, "Nome do usuário: " + nome, Toast.LENGTH_LONG).show();
+
+            // Altera o TextView da tela com o nome do usuário
+            //TextView texto = (TextView) findViewById(R.id.textoInicial);
+            //texto.setText(nome);
+        }
     }
+
     @Override
     // Método para colocar o menu na ActionBar
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -93,6 +104,58 @@ public class IndexActivity extends DebugActivity {
         };
     }
 
+    // TRatar os eventos dos botões do menu
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_atualizar) {
+            Toast.makeText(IndexActivity.this,
+                    "Atualizar",
+                    Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.action_buscar) {
+            Toast.makeText(IndexActivity.this,
+                    "Buscar",
+                    Toast.LENGTH_SHORT).show();
+//        } else if (id == R.id.action_adicionar) {
+//            Toast.makeText(IndexActivity.this,
+//                    "Buscar",
+//                    Toast.LENGTH_SHORT).show();
+//            Intent it = new Intent(IndexActivity.this, CadastroActivity.class);
+//            startActivityForResult(it, 1);
+        } else if (id == R.id.action_config) {
+            Toast.makeText(IndexActivity.this,
+                    "Config",
+                    Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.action_share) {
+            Toast.makeText(IndexActivity.this,
+                    "Compartilhar",
+                    Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    // Recuperar resultado de CadastroActivity após ela ser finalizada
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == 1) {
+
+            if (resultCode == RESULT_OK) {
+                StringBuffer textoRetorno = new StringBuffer();
+                textoRetorno.append(data.getStringExtra("nomeCerveja"));
+                textoRetorno.append("\n");
+                textoRetorno.append(data.getStringExtra("tipoCerveja"));
+                textoRetorno.append("\n");
+                textoRetorno.append(data.getStringExtra("paisCerveja"));
+                textoRetorno.append("\n");
+                textoRetorno.append(data.getStringExtra("enderecoCerveja"));
+                textoRetorno.append("\n");
+                textoRetorno.append(data.getStringExtra("precoCerveja"));
+
+                //TextView texto = (TextView) findViewById(R.id.textoInicial);
+                //texto.setText(textoRetorno.toString());
+
+            }
+        }
+    }
 
     @Override
     protected void onStart() {
