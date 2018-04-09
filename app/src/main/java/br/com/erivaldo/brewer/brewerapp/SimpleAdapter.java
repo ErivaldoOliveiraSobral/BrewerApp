@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 /**
  * Created by Android on 09/04/2018.
@@ -34,7 +35,11 @@ public class SimpleAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
+    public View getView(int posicao, View view, ViewGroup viewGroup) {
+        String cerveja = listaDeCervejas[posicao];
+        TextView txtView = new TextView(contexto);
+        txtView.setText(cerveja);
+
+        return txtView;
     }
 }

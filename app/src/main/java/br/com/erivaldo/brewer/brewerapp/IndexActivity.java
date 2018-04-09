@@ -11,8 +11,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.SimpleAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +27,16 @@ public class IndexActivity extends DebugActivity {
         super.onCreate(savedInstanceState);
         // Define qual será a View da Activity
         setContentView(R.layout.activity_index);
+
+        ListView lista = findViewById(R.id.listaCervejas);
+        lista.setAdapter(new SimpleAdapter(IndexActivity.this));
+
+        lista.setOnItemClickListener(new ListView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(IndexActivity.this, null, Toast.LENGTH_LONG).show();
+            }
+        });
 
         // Recupera a intent e os dados enviados na chamda da Activity
         Intent intent = getIntent();
