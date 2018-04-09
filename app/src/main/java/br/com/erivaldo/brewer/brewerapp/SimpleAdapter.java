@@ -1,5 +1,6 @@
 package br.com.erivaldo.brewer.brewerapp;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -9,6 +10,14 @@ import android.widget.BaseAdapter;
  */
 
 public class SimpleAdapter extends BaseAdapter {
+
+    public String[] listaDeCervejas = new String[] {"Franziskaner", "Paulaner", "Hofabrau", "Sierra Nevada", "Heineken", "Murphys"};
+    Context contexto;
+
+    public SimpleAdapter(Context contexto){
+        this.contexto = contexto;
+    }
+
     @Override
     public int getCount() {
         return 0;
