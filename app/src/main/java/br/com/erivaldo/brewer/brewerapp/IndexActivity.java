@@ -34,7 +34,9 @@ public class IndexActivity extends DebugActivity {
         lista.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(IndexActivity.this, null, Toast.LENGTH_LONG).show();
+                //Toast.makeText(IndexActivity.this, "Clicou " + listaCervejas[i], Toast.LENGTH_LONG).show();
+                Toast.makeText(IndexActivity.this, i, Toast.LENGTH_LONG).show();
+
             }
         });
 
