@@ -1,21 +1,15 @@
 package br.com.erivaldo.brewer.brewerapp;
 
 import android.content.Intent;
-import android.os.Debug;
 import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.ShareActionProvider;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class IndexActivity extends DebugActivity {
@@ -35,7 +29,7 @@ public class IndexActivity extends DebugActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //Toast.makeText(IndexActivity.this, "Clicou " + listaCervejas[i], Toast.LENGTH_LONG).show();
-                Toast.makeText(IndexActivity.this, i, Toast.LENGTH_LONG).show();
+                Toast.makeText(IndexActivity.this, listaCervejas[i], Toast.LENGTH_LONG).show();
 
             }
         });

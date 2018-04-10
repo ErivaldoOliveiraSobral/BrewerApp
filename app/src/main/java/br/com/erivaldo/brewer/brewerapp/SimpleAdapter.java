@@ -1,6 +1,7 @@
 package br.com.erivaldo.brewer.brewerapp;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -35,11 +36,13 @@ public class SimpleAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int posicao, View view, ViewGroup viewGroup) {
+    public View getView(int posicao, View view, ViewGroup viewGroup){
         String cerveja = listaDeCervejas[posicao];
-        TextView txtView = new TextView(contexto);
-        txtView.setText(cerveja);
 
-        return txtView;
+        View viewText = LayoutInflater.from(contexto).inflate(R.layout.tela_inicial_itens, viewGroup, false);
+        TextView t = (TextView) viewText.findViewById(R.id.textItemList);
+        t.setText(cerveja);
+
+        return viewText;
     }
 }
