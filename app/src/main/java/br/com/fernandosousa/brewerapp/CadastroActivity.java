@@ -43,6 +43,13 @@ public class CadastroActivity extends AppCompatActivity {
             }
         });
 
+        EditText nomeCerveja = (EditText) findViewById(R.id.nomeCerveja);
+        EditText tipo = (EditText) findViewById(R.id.tipoCerveja);
+        EditText pais = (EditText) findViewById(R.id.paisCerveja);
+        EditText endereco = (EditText) findViewById(R.id.enderecoCerveja);
+        EditText precoCerveja = (EditText) findViewById(R.id.precoCerveja);
+        EditText urlImagem = (EditText) findViewById(R.id.urlImagem);
+
         // recuperar Intent vinda da alteração
         Intent cadastroIt = getIntent();
         Serializable cervejaS = cadastroIt.getSerializableExtra("cerveja");
