@@ -54,8 +54,6 @@ public class CadastroActivity extends AppCompatActivity {
             EditText enderecoCerveja = (EditText) findViewById(R.id.enderecoCerveja);
             EditText precoCerveja = (EditText) findViewById(R.id.precoCerveja);
             EditText imagemCerveja = (EditText) findViewById(R.id.urlImagem);
-//            EditText latitudeCerveja = (EditText) findViewById(R.id.latitude);
-//            EditText longitudeCerveja = (EditText) findViewById(R.id.longitude);
             CheckBox favorita = (CheckBox)findViewById(R.id.checkFavorita);
             ToggleButton origem = (ToggleButton) findViewById(R.id.toggleButton);
 
@@ -66,8 +64,6 @@ public class CadastroActivity extends AppCompatActivity {
             enderecoCerveja.setText(cerveja.endereco);
             precoCerveja.setText(Double.toString(cerveja.preco));
             imagemCerveja.setText(cerveja.imagem);
-//            latitudeCerveja.setText(cerveja.latitude);
-//            longitudeCerveja.setText(cerveja.longitude);
             origem.setChecked(cerveja.origem==1?true:false);
 
             // selecionar favorita
@@ -76,10 +72,6 @@ public class CadastroActivity extends AppCompatActivity {
             // escolher radio que será selecionado
             RadioGroup botaoBrilho = (RadioGroup)findViewById(R.id.grupoBrilho);
             botaoBrilho.check(cerveja.brilho);
-
-
-
-
         }
 
 
@@ -96,8 +88,6 @@ public class CadastroActivity extends AppCompatActivity {
                 EditText enderecoCerveja = (EditText) findViewById(R.id.enderecoCerveja);
                 EditText precoCerveja = (EditText) findViewById(R.id.precoCerveja);
                 EditText imagemCerveja = (EditText) findViewById(R.id.urlImagem);
-//                EditText latitudeCerveja = (EditText) findViewById(R.id.latitude);
-//                EditText longitudeCerveja = (EditText) findViewById(R.id.longitude);
 
                 String textoNomeCerveja = nomeCerveja.getText().toString();
                 String textoTipoCerveja = tipoCerveja.getText().toString();
@@ -105,8 +95,6 @@ public class CadastroActivity extends AppCompatActivity {
                 String textoEnderecoCerveja = enderecoCerveja.getText().toString();
                 String textoPrecoCerveja = precoCerveja.getText().toString();
                 String textoImagemCerveja = imagemCerveja.getText().toString();
-//                String textoLatitudeCerveja = latitudeCerveja.getText().toString();
-//                String textoLongitudeCerveja = longitudeCerveja.getText().toString();
 
                 // verificar se checkbox está selecionado
                 CheckBox check = (CheckBox) findViewById(R.id.checkFavorita);
