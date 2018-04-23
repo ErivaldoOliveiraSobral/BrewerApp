@@ -54,8 +54,10 @@ public class CadastroActivity extends AppCompatActivity {
 
         cerveja.nome = nomeCerveja.getText().toString();
         cerveja.tipo = tipoCerveja.getText().toString();
-        cerveja.pais = nomeCerveja.getText().toString();
-        cerveja.endereco = nomeCerveja.getText().toString();
+        cerveja.pais = paisCerveja.getText().toString();
+        cerveja.endereco = enderecoCerveja.getText().toString();
+        cerveja.preco = precoCerveja.getText();
+        cerveja.imagem = precoCerveja.getText().toString();
 
         // recuperar Intent vinda da alteração
         Intent cadastroIt = getIntent();
