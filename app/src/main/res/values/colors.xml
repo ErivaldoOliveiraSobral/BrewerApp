@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#646593</color>
-    <color name="colorAccent">#8c5d5d</color>
-    <color name="corFundo">#b1c1d2</color>
+    <color name="colorPrimary">#325ec6</color>
+    <color name="colorPrimaryDark">#143371</color>
+    <color name="colorAccent">#335494</color>
+    <color name="colorNavigation">#2b7da3</color>
+    <color name="colorWindow">#fcfaed</color>
+    <color name="colorText">#da6f41</color>
+
+    <color name="vermelho">#FF0000</color>
+    <color name="azul">#0000FF</color>
+    <color name="verde">#00FF00</color>
+    <color name="branco">#FFFFFF</color>
 </resources>

@@ -1,13 +1,17 @@
 <resources>
     <string name="app_name">BrewerApp</string>
     <string name="mensagem_login">Faça seu Login</string>
-    <string name="mensagemInicio">Bem Vindo ao Brewer App!</string>
-    <string name="sucessoLogin">Obrigado!</string>
-    <string name="voltar">Voltar</string>
-    <string name="title_activity_index">Index</string>
-    <string name="action_buscar">Buscar</string>
-    <string name="action_share">Share</string>
+    <string name="mensagem_login_activity">Bem vindo ao Brewer App!</string>
+
+    <string name="action_buscar">Procurar</string>
     <string name="action_atualizar">Atualizar</string>
     <string name="action_adicionar">Adicionar</string>
-    <string name="action_config">Configuração</string>
+    <string name="action_config">Configurações</string>
+    <string name="action_share">Compartilhar</string>
+
+    <string name="texto_usuario">Usuário</string>
+    <string name="texto_senha">Senha</string>
+    <string name="action_alterar">Alterar</string>
+    <string name="action_remover">Remover</string>
+
 </resources>
