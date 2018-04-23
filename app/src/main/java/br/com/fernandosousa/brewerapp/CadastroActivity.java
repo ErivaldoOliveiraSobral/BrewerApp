@@ -124,8 +124,6 @@ public class CadastroActivity extends AppCompatActivity {
                 cerveja.preco = Double.valueOf(textoPrecoCerveja);
                 cerveja.tipo = textoTipoCerveja;
                 cerveja.imagem = textoImagemCerveja;
-//                cerveja.latitude = textoLatitudeCerveja;
-//                cerveja.longitude = textoLongitudeCerveja;
 
                 CervejaDB cervejaDB = new CervejaDB(CadastroActivity.this);
 
