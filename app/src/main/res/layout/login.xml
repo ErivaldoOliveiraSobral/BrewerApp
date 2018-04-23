@@ -60,10 +60,10 @@
     </FrameLayout>
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/login_img"
-        android:id="@+id/imagemLogin" />
+        app:srcCompat="@drawable/smile2" />
 
 
 </LinearLayout>
