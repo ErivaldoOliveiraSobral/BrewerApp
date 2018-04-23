@@ -15,8 +15,6 @@ public class Cerveja implements Serializable{
     public String tipo;
     public String pais;
     public String endereco;
-//    public String latitude;
-//    public String longitude;
     public double preco;
     public int favorita;
     public int origem;
