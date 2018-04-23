@@ -7,8 +7,8 @@
     <color name="colorWindow">#fcfaed</color>
     <color name="colorText">#da6f41</color>
 
-    <color name="vermelho">#FF0000</color>
-    <color name="azul">#0000FF</color>
-    <color name="verde">#00FF00</color>
+    <color name="vermelho">#6c85be</color>
+    <color name="azul">#0000ff</color>
+    <color name="verde">#00ffbb</color>
     <color name="branco">#FFFFFF</color>
 </resources>
